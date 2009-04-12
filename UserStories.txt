@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------
+			User Stories for MBlog
+-------------------------------------------------------------------------
+First Iteration:
+
+1. Home page should list the 5 latest blog post summaries from the database
+2. When a hyperlink of a blog post is clicked it should display the title, content, author and the comments of the blog post
+3. Users should be able to post comments on the blog posts
+4. Blog owner should be able to publish new posts
+5. Each blog should have a title, content, author-name, date when it was created and the comments
+6. Each comment should have content, author-name, and the timestamp when the comment was made
