@@ -1,0 +1,1 @@
+MBlog is a light weight blogging engine, which uses ASP.NET MVC, jQuery and nHibernate technologies.
