@@ -45,8 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BlogService.cs" />
-    <Compile Include="IBlogService.cs" />
+    <Compile Include="PostService.cs" />
+    <Compile Include="IPostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

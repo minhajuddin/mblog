@@ -8,7 +8,9 @@ namespace MBlog.Data.Domain {
         public DateTime Timestamp { get; set; }
         public string Gist {
             get {
-                return Content.Substring(0, 100) + " ....";
+                //returns the first 100 characters of the content
+                var gist = Content.Length < 100 ? Content : Content.Substring(0, 100) + " ....";
+                return gist;
             }
         }
     }

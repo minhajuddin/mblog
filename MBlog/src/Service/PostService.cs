@@ -4,10 +4,10 @@ using MBlog.Data.Domain;
 using System.Linq;
 
 namespace MBlog.Service {
-    public class BlogService : IBlogService {
+    public class PostService : IPostService {
         private IPostRepository _repository;
 
-        public BlogService(IPostRepository repository) {
+        public PostService(IPostRepository repository) {
             _repository = repository;
         }
 

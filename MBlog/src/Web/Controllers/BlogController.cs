@@ -8,9 +8,9 @@ using MBlog.Service;
 namespace MBlog.Web.Controllers {
     public class BlogController : Controller {
 
-        IBlogService _blogService;
+        IPostService _blogService;
 
-        public BlogController(IBlogService blogService) {
+        public BlogController(IPostService blogService) {
             _blogService = blogService;
         }
 

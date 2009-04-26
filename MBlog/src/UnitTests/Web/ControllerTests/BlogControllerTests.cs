@@ -21,7 +21,7 @@ namespace MBlog.Tests.Web.ControllerTests {
 
         [FixtureSetUp]
         public void FixtureSetup() {
-            blogController = new BlogController(new BlogService(new TestBlogRepository()));
+            blogController = new BlogController(new PostService(new TestBlogRepository()));
         }
 
         [Test]

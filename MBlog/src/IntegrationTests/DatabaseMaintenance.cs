@@ -4,7 +4,7 @@ using System.Linq;
 using MBlog.Data.DataAccess.Entity;
 using System;
 
-namespace MBlog.Tests {
+namespace MBlog.IntegrationTests {
     //TODO:Find a better way to do Data maintenance
     [TestFixture]
     [Ignore]

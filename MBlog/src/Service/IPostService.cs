@@ -2,7 +2,7 @@
 using MBlog.Data.Domain;
 
 namespace MBlog.Service {
-    public interface IBlogService {
+    public interface IPostService {
         IList<Post> GetAllPosts();
     }
 }

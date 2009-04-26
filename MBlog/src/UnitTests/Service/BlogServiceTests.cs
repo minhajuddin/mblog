@@ -14,11 +14,11 @@ namespace MBlog.Tests.Service {
      */
     [TestFixture]
     public class BlogServiceTests {
-        BlogService blogService;
+        PostService blogService;
 
         [FixtureSetUp]
         public void FixtureSetup() {
-            blogService = new BlogService(new TestBlogRepository());
+            blogService = new PostService(new TestBlogRepository());
         }
 
         [Test]

@@ -34,7 +34,7 @@ namespace MBlog.Web {
         //TODO:Find a better place to wire up the IoC Container
         private void ConfigureStructureMap() {
             StructureMapConfiguration.ForRequestedType<IPostRepository>().TheDefaultIsConcreteType<PostRepository>();
-            StructureMapConfiguration.ForRequestedType<IBlogService>().TheDefaultIsConcreteType<BlogService>();
+            StructureMapConfiguration.ForRequestedType<IPostService>().TheDefaultIsConcreteType<PostService>();
         }
     }
 }

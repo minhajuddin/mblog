@@ -3,7 +3,7 @@ using System.Linq;
 using MBlog.Data.Domain;
 using MBlog.Data.DataAccess;
 
-namespace MBlog.Tests.Data.DataAccessTests {
+namespace MBlog.IntegrationTests.RepositoryTests {
     [TestFixture]
     public class PostRepositoryTests {
         [Test]
