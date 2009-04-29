@@ -50,12 +50,14 @@
   <ItemGroup>
     <Compile Include="DataAccess\ConversionHelper.cs" />
     <Compile Include="DataAccess\IPostRepository.cs" />
+    <Compile Include="DataAccess\ISiteRepository.cs" />
     <Compile Include="DataAccess\MBlogRepository.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MBlogRepository.dbml</DependentUpon>
     </Compile>
     <Compile Include="DataAccess\PostRepository.cs" />
+    <Compile Include="DataAccess\SiteRepository.cs" />
     <Compile Include="Domain\Post.cs" />
     <Compile Include="MBlogConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

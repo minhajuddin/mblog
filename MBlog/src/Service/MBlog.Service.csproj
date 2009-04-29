@@ -45,9 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ISiteService.cs" />
     <Compile Include="PostService.cs" />
     <Compile Include="IPostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\MBlog.Data.csproj">

@@ -8,6 +8,7 @@ using MBlog.Web.Miscellaneous;
 using StructureMap;
 using MBlog.Data.DataAccess;
 using MBlog.Service;
+using MBlog.Web.BootStrap;
 
 namespace MBlog.Web {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -32,14 +33,8 @@ namespace MBlog.Web {
 
         protected void Application_Start() {
             RegisterRoutes(RouteTable.Routes);
-            ConfigureStructureMap();
+            BootStrapper.ConfigureStructureMap();
             ControllerBuilder.Current.SetControllerFactory(new IoCControllerFactory());
-        }
-
-        //TODO:Find a better place to wire up the IoC Container
-        private void ConfigureStructureMap() {
-            StructureMapConfiguration.ForRequestedType<IPostRepository>().TheDefaultIsConcreteType<PostRepository>();
-            StructureMapConfiguration.ForRequestedType<IPostService>().TheDefaultIsConcreteType<PostService>();
         }
     }
 }
