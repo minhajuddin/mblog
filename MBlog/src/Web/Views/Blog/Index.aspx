@@ -11,7 +11,8 @@
       <%foreach (var item in Model) { %>
       <li>
         <h3>
-          <%=item.Title %></h3>
+          <%=Html.RouteLink(item.Title, "posts",new{id=item.ID,title=item.Title}) %>
+        </h3>
         <p class="gist">
           <%=item.Gist %>
         </p>

@@ -18,11 +18,16 @@ namespace MBlog.Web {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "posts",                                              // Route name
+                "post/{id}/{title}",                           // URL with parameters
+                new { controller = "Blog", action = "Post" }  // Parameter defaults
+            );
+
+            routes.MapRoute(
                 "Default",                                              // Route name
                 "{controller}/{action}/{id}",                           // URL with parameters
                 new { controller = "Home", action = "Index", id = "" }  // Parameter defaults
             );
-
         }
 
         protected void Application_Start() {

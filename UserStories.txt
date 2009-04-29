@@ -5,6 +5,7 @@ First Iteration:
 
  Home page should list the 5 latest blog post summaries from the database
  When a hyperlink of a blog post is clicked it should display the title, content, author and the comments of the blog post
+ Blog should display the site's title and a few other details by getting them from the database
  Users should be able to post comments on the blog posts
  Blog owner should be able to publish new posts
  Each blog should have a title, content, author-name, date when it was created and the comments

@@ -15,5 +15,17 @@ namespace MBlog.Service {
             var result = _repository.GetPosts();
             return result.ToList();
         }
+
+        public IList<Post> GetLatestPosts() {
+            var result = _repository.GetPosts()
+                .Take(5).ToList();
+            return result;
+        }
+
+        public Post GetPost(int postId) {
+            var post = _repository.GetPosts()
+                .SingleOrDefault(x => x.ID == postId);
+            return post;
+        }
     }
 }

@@ -15,9 +15,13 @@ namespace MBlog.Web.Controllers {
         }
 
         public ActionResult Index() {
-            var result = _blogService.GetAllPosts();
+            var result = _blogService.GetLatestPosts();
             return View(result);
         }
 
+        public ActionResult Post(int id, string title) {
+            var post = _blogService.GetPost(id);
+            return View(post);
+        }
     }
 }

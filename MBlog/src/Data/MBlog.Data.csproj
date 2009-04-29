@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\ConversionHelper.cs" />
     <Compile Include="DataAccess\IPostRepository.cs" />
     <Compile Include="DataAccess\MBlogRepository.designer.cs">
       <AutoGen>True</AutoGen>

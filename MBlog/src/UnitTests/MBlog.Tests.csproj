@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mocks\TestBlogRepository.cs" />
-    <Compile Include="Service\BlogServiceTests.cs" />
+    <Compile Include="Service\PostServiceTests.cs" />
     <Compile Include="Web\ControllerTests\BlogControllerTests.cs" />
     <Compile Include="DomainTests\BlogPostTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,6 +80,9 @@
       <Project>{65A31E28-A739-46BE-9BA9-773C2825FFB0}</Project>
       <Name>MBlog.Web</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fakes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

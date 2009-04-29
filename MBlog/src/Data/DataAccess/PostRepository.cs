@@ -14,17 +14,21 @@ namespace MBlog.Data.DataAccess {
         }
 
         public IQueryable<Post> GetPosts() {
-            return _db.Posts.Select(p => ConvertToDomainPost(p));
+            return _db.Posts
+                .OrderByDescending(x => x.Timestamp)
+                //TODO: Fix this by using the extension method
+                //.Select(p => p.ToDomainPost());
+                .Select(
+                p => new Post
+                {
+                    ID = p.PostID,
+                    Title = p.Title,
+                    Author = p.Author,
+                    Timestamp = p.Timestamp,
+                    Content = p.Content
+                });
         }
 
-        private Post ConvertToDomainPost(Entity.Post p) {
-            return new Post
-            {
-                Title = p.Title,
-                Content = p.Content,
-                Author = p.Author,
-                Timestamp = p.Timestamp
-            };
-        }
+
     }
 }
