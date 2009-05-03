@@ -71,8 +71,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\DI\IoCControllerFactory.cs" />
+    <Compile Include="Infrastructure\Helpers\ControllerHelperExtensions.cs" />
     <Compile Include="Infrastructure\Helpers\HtmlHelperExtensions.cs" />
     <Compile Include="Infrastructure\Helpers\UrlHelperExtensions.cs" />
+    <Compile Include="Infrastructure\MVC\UrlResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

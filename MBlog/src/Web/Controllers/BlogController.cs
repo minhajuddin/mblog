@@ -4,6 +4,7 @@ using MBlog.Data.Domain;
 using MBlog.Data.DataAccess;
 using System.Linq;
 using MBlog.Service;
+using MBlog.Web.Infrastructure.Helpers;
 
 namespace MBlog.Web.Controllers {
     public class BlogController : Controller {
@@ -22,6 +23,14 @@ namespace MBlog.Web.Controllers {
         public ActionResult Post(int id, string title) {
             var post = _blogService.GetPost(id);
             return View(post);
+        }
+
+        public ActionResult UrlShortener(int id) {
+            var post = _blogService.GetPost(id);
+            if (post == null) {
+                return RedirectToAction("Index");
+            }
+            return this.RedirectToUrl(Url.GetPermaLink(post));
         }
     }
 }

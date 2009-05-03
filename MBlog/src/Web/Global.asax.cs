@@ -19,6 +19,13 @@ namespace MBlog.Web {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "url_shortener",                                              // Route name
+                "{id}",                           // URL with parameters
+                new { controller = "Blog", action = "UrlShortener" },  // Parameter defaults
+                new { id = @"^\d+$" }
+            );
+
+            routes.MapRoute(
                 "posts",                                              // Route name
                 "post/{id}/{title}",                           // URL with parameters
                 new { controller = "Blog", action = "Post" }  // Parameter defaults
@@ -27,7 +34,7 @@ namespace MBlog.Web {
             routes.MapRoute(
                 "Default",                                              // Route name
                 "{controller}/{action}/{id}",                           // URL with parameters
-                new { controller = "Home", action = "Index", id = "" }  // Parameter defaults
+                new { controller = "Blog", action = "Index", id = "" }  // Parameter defaults
             );
         }
 
