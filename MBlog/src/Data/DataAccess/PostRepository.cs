@@ -29,6 +29,12 @@ namespace MBlog.Data.DataAccess {
                 });
         }
 
+        public void Insert(Post newPost) {
+            _db.Posts.InsertOnSubmit(newPost.ToEntityPost());
+        }
 
+        public void Save() {
+            _db.SubmitChanges();
+        }
     }
 }

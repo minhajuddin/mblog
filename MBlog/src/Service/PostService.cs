@@ -27,5 +27,10 @@ namespace MBlog.Service {
                 .SingleOrDefault(x => x.ID == postId);
             return post;
         }
+
+        public void InsertPost(Post newPost) {
+            _repository.Insert(newPost);
+            _repository.Save();
+        }
     }
 }

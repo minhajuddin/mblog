@@ -81,5 +81,13 @@ namespace MBlog.Tests.Mocks {
         public IQueryable<Post> GetPosts() {
             return posts.AsQueryable();
         }
+
+        public void Insert(Post newPost) {
+            posts.Add(newPost);
+        }
+
+        public void Save() {
+
+        }
     }
 }

@@ -7,5 +7,6 @@ namespace MBlog.Service {
         IList<Post> GetAllPosts();
         IList<Post> GetLatestPosts();
         Post GetPost(int postId);
+        void InsertPost(Post newPost);
     }
 }

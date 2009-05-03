@@ -16,15 +16,12 @@
           <a href="/" title="Html.GetSiteName()">
             <%=Html.GetSiteName()%></a></h1>
       </div>
-      <div id="logindisplay">
-        <% Html.RenderPartial("LogOnUserControl"); %>
-      </div>
       <div id="menucontainer">
         <ul id="menu">
           <li>
-            <%= Html.ActionLink("Home", "Index", "Home")%></li>
+            <%= Html.ActionLink("Home", "Index", "Blog")%></li>
           <li>
-            <%= Html.ActionLink("About", "About", "Home")%></li>
+            <%= Html.ActionLink("About Me", "About", "Blog")%></li>
         </ul>
       </div>
     </div>

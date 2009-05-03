@@ -60,9 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Infrastructure\DI\BootStrapper.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -75,23 +73,19 @@
     <Compile Include="Infrastructure\Helpers\HtmlHelperExtensions.cs" />
     <Compile Include="Infrastructure\Helpers\UrlHelperExtensions.cs" />
     <Compile Include="Infrastructure\MVC\UrlResult.cs" />
+    <Compile Include="Models\DTO\PostForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Blog\Create.aspx" />
     <Content Include="Views\Blog\Index.aspx" />
     <Content Include="Views\Blog\Post.aspx" />
     <Content Include="Web.config" />
     <Content Include="Content\css\mblog.css" />
     <Content Include="Scripts\framework\jquery-1.3.2.min.js" />
     <Content Include="Scripts\framework\jquery-1.3.2.min-vsdoc.js" />
-    <Content Include="Views\Account\ChangePassword.aspx" />
-    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
-    <Content Include="Views\Account\LogOn.aspx" />
-    <Content Include="Views\Account\Register.aspx" />
-    <Content Include="Views\Home\About.aspx" />
-    <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Shared\Error.aspx" />
     <Content Include="Views\Shared\LogOnUserControl.ascx" />
     <Content Include="Views\Shared\Site.Master" />
@@ -110,7 +104,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\images\" />
-    <Folder Include="Models\" />
     <Folder Include="Scripts\custom\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

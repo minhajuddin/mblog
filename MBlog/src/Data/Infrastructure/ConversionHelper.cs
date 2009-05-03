@@ -13,6 +13,17 @@ namespace MBlog.Data.DataAccess {
                 Timestamp = p.Timestamp
             };
         }
+
+        public static Entity.Post ToEntityPost(this Post p) {
+            return new Entity.Post
+            {
+                PostID = p.ID,
+                Title = p.Title,
+                Content = p.Content,
+                Author = p.Author,
+                Timestamp = p.Timestamp
+            };
+        }
     }
 
 }

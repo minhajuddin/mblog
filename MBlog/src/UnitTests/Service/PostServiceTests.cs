@@ -6,6 +6,8 @@ using MBlog.Service;
 using MbUnit.Framework;
 using Moq;
 using MBlog.Tests.Mocks;
+using MBlog.Web.Models.DTO;
+using System;
 
 namespace MBlog.Tests.Service {
     /* Blog service tests:
@@ -46,6 +48,21 @@ namespace MBlog.Tests.Service {
             var result = blogService.GetPost(2);
             Assert.IsNotNull(result);
             Assert.AreEqual(2, result.ID);
+        }
+
+        [Test]
+        public void InsertPostShouldBeAbleToCreateAPost() {
+            var initialCount = blogService.GetAllPosts().Count();
+            var post = new Post
+            {
+                Title = "Being inserted from the Test",
+                Content = "And here is some content for you",
+                Author = "Khaja",
+                Timestamp = DateTime.Now.Date
+            };
+            blogService.InsertPost(post);
+            var result = blogService.GetAllPosts().Count;
+            Assert.AreEqual(initialCount + 1, result);
         }
     }
 }
