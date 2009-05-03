@@ -25,6 +25,7 @@ namespace MBlog.Web.Controllers {
             return View(post);
         }
 
+        //Url Shortener action forwards any incoming request to the proper url
         public ActionResult UrlShortener(int id) {
             var post = _blogService.GetPost(id);
             if (post == null) {

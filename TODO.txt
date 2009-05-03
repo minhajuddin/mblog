@@ -1,0 +1,13 @@
+  ===========  MBlog Features to be added ============
+  Must Have:
+  *1) Configure an automatic build using Nant
+  2) Add functionality to create posts
+  3) Add functionality for comments
+  
+  Nice to Have:
+  1) Configure Watin to run acceptance tests
+  2) Configure a CI server
+  
+  Legend:
+  # Done
+  * Being worked upon
