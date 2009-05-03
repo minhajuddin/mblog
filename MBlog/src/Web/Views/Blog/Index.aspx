@@ -4,14 +4,12 @@
   Index
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-  <h2>
-    --Placeholder for the Blog title--</h2>
   <div id="posts">
     <ul>
       <%foreach (var item in Model) { %>
       <li>
         <h3>
-          <%=Html.RouteLink(item.Title, "posts",new{id=item.ID,title=item.Title}) %>
+          <%=Html.RouteLink(item.Title, "posts",new{id=item.ID,title=item.Slug}) %>
         </h3>
         <p class="gist">
           <%=item.Gist %>

@@ -60,6 +60,20 @@ namespace MBlog.Tests.Data.DomainTests {
             var result = blogPost.Gist.Length;
             Assert.AreEqual(expected, result);
         }
+
+        [Test]
+        public void SlugReplacesTheSpecialCharactersWithHyphens() {
+            var blogPost = new Post
+            {
+                Title = "This is a simple test title",
+                Content = "Test Content",
+                Author = "Minhajuddin",
+                Timestamp = DateTime.Now
+            };
+
+            var expected = "This-is-a-simple-test-title";
+            Assert.AreEqual(expected, blogPost.Slug);
+        }
     }
 }
 

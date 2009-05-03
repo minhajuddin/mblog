@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\ConversionHelper.cs" />
+    <Compile Include="Infrastructure\ConversionHelper.cs" />
     <Compile Include="DataAccess\IPostRepository.cs" />
     <Compile Include="DataAccess\ISiteRepository.cs" />
     <Compile Include="DataAccess\MBlogRepository.designer.cs">

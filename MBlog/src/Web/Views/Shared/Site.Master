@@ -6,14 +6,15 @@
   <title>
     <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
   </title>
-  <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+  <link href="<%=Url.GetCSS("mblog.css") %>" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <div class="page">
     <div id="header">
       <div id="title">
         <h1>
-        </h1>
+          <a href="/" title="Html.GetSiteName()">
+            <%=Html.GetSiteName()%></a></h1>
       </div>
       <div id="logindisplay">
         <% Html.RenderPartial("LogOnUserControl"); %>
