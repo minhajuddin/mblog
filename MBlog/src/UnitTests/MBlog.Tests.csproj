@@ -81,13 +81,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Data\MBlog.Data.csproj">
-      <Project>{FC690F52-DB08-4D91-864B-A769C66EF6CB}</Project>
-      <Name>MBlog.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Service\MBlog.Service.csproj">
-      <Project>{5C949D9E-DA8C-4D5B-974E-5371805E3248}</Project>
-      <Name>MBlog.Service</Name>
+    <ProjectReference Include="..\MBlog.Core\MBlog.Core.csproj">
+      <Project>{5EA25647-A66F-4E38-A1FC-274463EB65C7}</Project>
+      <Name>MBlog.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Web\MBlog.Web.csproj">
       <Project>{65A31E28-A739-46BE-9BA9-773C2825FFB0}</Project>

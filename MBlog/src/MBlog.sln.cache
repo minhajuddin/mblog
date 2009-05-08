@@ -67,11 +67,11 @@
     <AspNetConfiguration>$(Configuration)</AspNetConfiguration>
   </PropertyGroup>
   <PropertyGroup>
-    <SolutionDir>E:\_repository\core_repos\MBlog\MBlog\src\</SolutionDir>
+    <SolutionDir>D:\_repositories\minhajuddin\core_repos\mblog\MBlog\src\</SolutionDir>
     <SolutionExt>.sln</SolutionExt>
     <SolutionFileName>MBlog.sln</SolutionFileName>
     <SolutionName>MBlog</SolutionName>
-    <SolutionPath>E:\_repository\core_repos\MBlog\MBlog\src\MBlog.sln</SolutionPath>
+    <SolutionPath>D:\_repositories\minhajuddin\core_repos\mblog\MBlog\src\MBlog.sln</SolutionPath>
   </PropertyGroup>
   <PropertyGroup>
     <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '2.0'">v2.0</TargetFrameworkVersion>
