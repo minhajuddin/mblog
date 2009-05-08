@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
-using MBlog.Data.Domain;
+using MBlog.Core.Domain;
+using MBlog.Core.Domain.Model;
 
-namespace MBlog.Service {
+namespace MBlog.Core.Services {
 
     public interface IPostService {
         IList<Post> GetAllPosts();

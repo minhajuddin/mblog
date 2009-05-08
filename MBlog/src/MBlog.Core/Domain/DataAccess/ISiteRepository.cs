@@ -1,4 +1,4 @@
-﻿namespace MBlog.Data.DataAccess {
+﻿namespace MBlog.Core.Domain.DataAccess {
     public interface ISiteRepository {
         string GetSiteName();
     }

@@ -1,6 +1,8 @@
-﻿using MBlog.Data.Domain;
+﻿using MBlog.Core.Domain;
+using Entity = MBlog.Core.Domain.DataAccess.Entity;
+using MBlog.Core.Domain.Model;
 
-namespace MBlog.Data.DataAccess {
+namespace MBlog.Core.Infrastructure {
 
     public static class ConversionHelper {
         public static Post ToDomainPost(this Entity.Post p) {
@@ -14,7 +16,7 @@ namespace MBlog.Data.DataAccess {
             };
         }
 
-        public static Entity.Post ToEntityPost(this Post p) {
+        public static MBlog.Core.Domain.DataAccess.Entity.Post ToEntityPost(this Post p) {
             return new Entity.Post
             {
                 PostID = p.ID,

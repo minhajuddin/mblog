@@ -1,5 +1,5 @@
 ﻿using System.Web.Mvc;
-using MBlog.Service;
+using MBlog.Core.Services;
 using StructureMap;
 
 namespace MBlog.Web.Infrastructure.Helpers {

@@ -6,8 +6,6 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using MBlog.Web.Miscellaneous;
 using StructureMap;
-using MBlog.Data.DataAccess;
-using MBlog.Service;
 using MBlog.Web.BootStrap;
 
 namespace MBlog.Web {

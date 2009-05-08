@@ -1,9 +1,12 @@
-﻿using MBlog.Data.Domain;
-using System.Linq;
+﻿using System.Linq;
 using System.Collections.Generic;
-using MBlog.Data.DataAccess.Context;
+using MBlog.Core.Domain.DataAccess;
+using MBlog.Core.Domain.DataAccess.Context;
+using MBlog.Core.Domain.Model;
+using MBlog.Core.Infrastructure;
 
-namespace MBlog.Data.DataAccess {
+
+namespace MBlog.Core.DataAccess {
 
     public class PostRepository : IPostRepository {
 

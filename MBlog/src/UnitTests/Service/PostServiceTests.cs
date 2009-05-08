@@ -1,13 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MBlog.Data.DataAccess;
-using MBlog.Data.Domain;
-using MBlog.Service;
 using MbUnit.Framework;
 using Moq;
 using MBlog.Tests.Mocks;
 using MBlog.Web.Models.DTO;
 using System;
+using MBlog.Core.Services;
+using MBlog.Core.Domain.Model;
 
 namespace MBlog.Tests.Service {
     /* Blog service tests:

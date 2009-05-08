@@ -1,12 +1,11 @@
 using System.Web.Mvc;
 using System.Collections.Generic;
-using MBlog.Data.Domain;
-using MBlog.Data.DataAccess;
 using System.Linq;
-using MBlog.Service;
 using MBlog.Web.Infrastructure.Helpers;
 using MBlog.Web.Models.DTO;
 using System;
+using MBlog.Core.Services;
+using MBlog.Core.Domain.Model;
 
 namespace MBlog.Web.Controllers {
     public class BlogController : Controller {

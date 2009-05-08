@@ -1,8 +1,8 @@
-﻿using MBlog.Data.DataAccess;
-using MBlog.Data.Domain;
-using System.Linq;
+﻿using System.Linq;
 using System.Collections.Generic;
 using System;
+using MBlog.Core.Domain.DataAccess;
+using MBlog.Core.Domain.Model;
 
 namespace MBlog.Tests.Mocks {
     class TestBlogRepository : IPostRepository {

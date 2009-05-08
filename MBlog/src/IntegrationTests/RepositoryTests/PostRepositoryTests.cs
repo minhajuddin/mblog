@@ -1,8 +1,8 @@
 ﻿using MbUnit.Framework;
 using System.Linq;
-using MBlog.Data.Domain;
-using MBlog.Data.DataAccess;
 using System;
+using MBlog.Core.DataAccess;
+using MBlog.Core.Domain.Model;
 
 namespace MBlog.IntegrationTests.RepositoryTests {
     [TestFixture]

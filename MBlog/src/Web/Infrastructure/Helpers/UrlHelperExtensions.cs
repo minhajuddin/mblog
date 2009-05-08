@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
-using MBlog.Data.Domain;
+using MBlog.Core.Domain.Model;
+
 
 namespace MBlog.Web.Infrastructure.Helpers {
     public static class UrlHelperExtensions {

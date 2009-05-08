@@ -1,6 +1,6 @@
-﻿using MBlog.Data.DataAccess;
+﻿using MBlog.Core.Domain.DataAccess;
 
-namespace MBlog.Service {
+namespace MBlog.Core.Services {
     public class SiteService : ISiteService {
 
         private ISiteRepository _repository;

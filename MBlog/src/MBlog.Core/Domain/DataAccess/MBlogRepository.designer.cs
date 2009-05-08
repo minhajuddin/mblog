@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MBlog.Data.DataAccess.Context
+namespace MBlog.Core.Domain.DataAccess.Context
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -28,13 +28,13 @@ namespace MBlog.Data.DataAccess.Context
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertPost(MBlog.Data.DataAccess.Entity.Post instance);
-    partial void UpdatePost(MBlog.Data.DataAccess.Entity.Post instance);
-    partial void DeletePost(MBlog.Data.DataAccess.Entity.Post instance);
+    partial void InsertPost(MBlog.Core.Domain.DataAccess.Entity.Post instance);
+    partial void UpdatePost(MBlog.Core.Domain.DataAccess.Entity.Post instance);
+    partial void DeletePost(MBlog.Core.Domain.DataAccess.Entity.Post instance);
     #endregion
 		
 		public MBlogRepositoryDataContext() : 
-				base(global::MBlog.Data.Properties.Settings.Default.MBlogConnectionString, mappingSource)
+				base(global::MBlog.Core.Properties.Settings.Default.MBlogConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -63,16 +63,16 @@ namespace MBlog.Data.DataAccess.Context
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<MBlog.Data.DataAccess.Entity.Post> Posts
+		public System.Data.Linq.Table<MBlog.Core.Domain.DataAccess.Entity.Post> Posts
 		{
 			get
 			{
-				return this.GetTable<MBlog.Data.DataAccess.Entity.Post>();
+				return this.GetTable<MBlog.Core.Domain.DataAccess.Entity.Post>();
 			}
 		}
 	}
 }
-namespace MBlog.Data.DataAccess.Entity
+namespace MBlog.Core.Domain.DataAccess.Entity
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;

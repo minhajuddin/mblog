@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using MBlog.Data.DataAccess;
-using MBlog.Data.Domain;
 using System.Linq;
+using MBlog.Core.Domain.Model;
+using MBlog.Core.Domain.DataAccess;
 
-namespace MBlog.Service {
+namespace MBlog.Core.Services {
     public class PostService : IPostService {
         private IPostRepository _repository;
 

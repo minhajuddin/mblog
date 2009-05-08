@@ -1,6 +1,6 @@
 ﻿using MbUnit.Framework;
 using System;
-using MBlog.Data.Domain;
+using MBlog.Core.Domain.Model;
 namespace MBlog.Tests.Data.DomainTests {
     /* Tests for the BlogPost class:
      *  - Blog post needs to have a Title, Content, Author and a Timestamp

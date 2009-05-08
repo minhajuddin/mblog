@@ -1,4 +1,4 @@
-﻿namespace MBlog.Data {
+﻿namespace MBlog.Core.Infrastructure {
     internal class MBlogConfiguration {
         public static string ConnectionString {
             get {

@@ -1,8 +1,8 @@
 ﻿using MbUnit.Framework;
-using MBlog.Data.DataAccess.Context;
 using System.Linq;
-using MBlog.Data.DataAccess.Entity;
 using System;
+using MBlog.Core.Domain.DataAccess.Context;
+using MBlog.Core.Domain.DataAccess.Entity;
 
 namespace MBlog.IntegrationTests {
     //TODO:Find a better way to do Data maintenance

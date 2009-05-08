@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace MBlog.Data.Domain {
+namespace MBlog.Core.Domain.Model {
     public class Post {
         public int ID { get; set; }
         public string Title { get; set; }

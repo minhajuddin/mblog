@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using MBlog.Web.Controllers;
 using System.Web.Mvc;
-using MBlog.Data.Domain;
-using MBlog.Service;
 using Moq;
 using MBlog.Tests.Mocks;
 using MBlog.Web.Models.DTO;
+using MBlog.Core.Services;
+using MBlog.Core.Domain.Model;
 
 namespace MBlog.Tests.Web.ControllerTests {
     /* BlogController Tests:

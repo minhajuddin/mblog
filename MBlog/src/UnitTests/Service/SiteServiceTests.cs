@@ -1,7 +1,7 @@
 ﻿using MbUnit.Framework;
 using StructureMap;
-using MBlog.Service;
 using MBlog.Web.BootStrap;
+using MBlog.Core.Services;
 
 namespace MBlog.Tests.Service {
 
