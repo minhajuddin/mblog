@@ -10,11 +10,15 @@
 </head>
 <body>
   <div class="page">
+  <%Html.RenderPartial("LogOnUserControl"); %>
     <div id="header">
       <div id="title">
         <h1>
           <a href="/" title="Html.GetSiteName()">
             <%=Html.GetSiteName()%></a></h1>
+      </div>
+      <div id="logindisplay">
+        <% Html.RenderPartial("LogOnUserControl"); %>
       </div>
       <div id="menucontainer">
         <ul id="menu">
