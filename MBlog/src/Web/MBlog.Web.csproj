@@ -92,7 +92,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MBlog.Core\MBlog.Core.csproj">
+    <ProjectReference Include="..\Core\MBlog.Core.csproj">
       <Project>{5EA25647-A66F-4E38-A1FC-274463EB65C7}</Project>
       <Name>MBlog.Core</Name>
     </ProjectReference>

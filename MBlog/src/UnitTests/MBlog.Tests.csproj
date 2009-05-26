@@ -81,7 +81,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MBlog.Core\MBlog.Core.csproj">
+    <ProjectReference Include="..\Core\MBlog.Core.csproj">
       <Project>{5EA25647-A66F-4E38-A1FC-274463EB65C7}</Project>
       <Name>MBlog.Core</Name>
     </ProjectReference>
@@ -91,7 +91,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\MBlog.Core\app.config">
+    <None Include="..\Core\app.config">
       <Link>app.config</Link>
     </None>
   </ItemGroup>

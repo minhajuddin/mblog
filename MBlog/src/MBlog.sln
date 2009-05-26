@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MBlog.Web", "Web\MBlog.Web.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MBlog.IntegrationTests", "IntegrationTests\MBlog.IntegrationTests.csproj", "{FB3E5721-C047-4112-9404-68284FD91B28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MBlog.Core", "MBlog.Core\MBlog.Core.csproj", "{5EA25647-A66F-4E38-A1FC-274463EB65C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MBlog.Core", "Core\MBlog.Core.csproj", "{5EA25647-A66F-4E38-A1FC-274463EB65C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
