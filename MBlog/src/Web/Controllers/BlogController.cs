@@ -31,6 +31,7 @@ namespace MBlog.Web.Controllers {
         }
 
         [AcceptVerbs(HttpVerbs.Post)]
+        [ValidateInput(false)]
         public ActionResult Create(PostForm post) {
             var newPost = new Post { Title = post.Title, Content = post.Content };
             try {
